@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css" >
+  <title>Newsletter sign-up form with success message</title>
+</head>
+<body>
+  <div class="container">
+    <img class="main-img" src="./assets/images/illustration-sign-up-mobile.svg" />
+    <div class="details">
+      <h1>Stay updated!</h1>
+      <p class="description">Join 60,000+ product managers recieving monthly updates on</p>
+      <div class="list">
+        <p><span class="tick-ct"><img class="tick" src="./assets/images/icon-list.svg" /></span>Product discovery and building what matters</p>
+        <p><span class="tick-ct"><img class="tick" src="./assets/images/icon-list.svg" /></span>Measuring to ensure updates are a success</p>
+        <p><span class="tick-ct"><img class="tick" src="./assets/images/icon-list.svg" /></span>And much more</p>
+      </div>
+      <div class="input-ct">
+        <span class="email">Email address</span>
+        <input class="input" type="email" placeholder="email@company.com" />
+      </div>
+      <button class="submit-bt">Subscribe to monthly Newsletter</button>
+    </div>
+  </div>
+  <div class="success-ctr">
+    <img class="tick-success" height="40px" width="40px" src="./assets/images/icon-list.svg" />
+    <h1>Thanks for subscribing!</h1>
+    <p class="verification-msg">A confirmation email has been sent to </p>
+    <button class="submit-bt-success">Dismiss message</button>
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>

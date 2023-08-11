@@ -1,0 +1,188 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+/* img {
+    width: 100%;
+} */
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 20px;
+}
+
+h1 {
+    font-size: 46px;
+    color: rgb(2, 2, 57);
+}
+
+.description {
+    font-size: 18px;
+}
+
+.list {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.tick-ct {
+    margin-right: 10px;
+}
+
+.list > p{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.input-ct {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.input {
+    font-size: 16px;
+    padding: 14px;
+}
+
+.email {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.submit-bt {
+    width: 100%;
+    margin-top: 20px;
+    padding: 16px;
+    color: white;
+    background-color: rgb(2, 2, 57);
+    border: 1px solid darkblue;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* success page */
+
+.success-ctr {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    background-color: white;
+    border-radius: 18px;
+    padding: 30px;
+    display: none;
+}
+
+.tick-success {
+    float: left;
+}
+
+.submit-bt-success {
+    width: 100%;
+    margin-top: 10px;
+    padding: 11px;
+    color: white;
+    background-color: rgb(2, 2, 57);
+    border: 1px solid white;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submit-bt-success:hover {
+    background-color: rgb(219, 91, 91);
+}
+
+.submit-bt-success:hover {
+    background-color: rgb(219, 91, 91);
+}
+
+@media (min-width: 768px) {
+    body {
+        height: 100vh;
+        background-color: rgb(37, 37, 74);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        background-color: white;
+        height: 600px;
+        width: 800px;
+        border-radius: 18px;
+    }
+    
+    .main-img {
+        background-image: url('./assets//images/illustration-sign-up-desktop.svg');
+        background-size: contain; /* Scale the image to fit within the div */
+        background-repeat: no-repeat;
+        background-position: center;
+        order: 2;
+        max-width: 40%;
+        height: 100%;
+    }
+
+    .details {
+        width: 40%;
+    }
+
+
+    /* success page */
+
+    .success-ctr {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 100%;
+        background-color: white;
+        height: 320px;
+        width: 280px;
+        border-radius: 18px;
+        padding: 30px;
+        display: none;
+    }
+
+    .tick-success {
+        float: left;
+    }
+
+    .submit-bt-success {
+        width: 100%;
+        margin-top: 10px;
+        padding: 11px;
+        color: white;
+        background-color: rgb(2, 2, 57);
+        border: 1px solid white;
+        border-radius: 4px;
+        font-size: 12px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .submit-bt-success:hover {
+        background-color: rgb(219, 91, 91);
+    }
+}
